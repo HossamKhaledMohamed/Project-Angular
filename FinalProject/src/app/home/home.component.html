@@ -1,0 +1,40 @@
+<p [style.color]="colertest">home works!</p>
+
+<h2 [style]="ifcondatan?mainstyle:secondstyle" >{{userName}}</h2>
+
+<h3 [class.test]="ifcondatan">{{choose}} {{choose2}}</h3>
+
+<img [src]="imgSrc" alt="" [width]="age">
+
+<button (click)="welcom(userName)" class="btn btn-danger"> {{userName}}</button>
+
+<input type="text" (keyup)="buttonInfo($event)" >
+
+<h3>{{name}}</h3>
+<input [(ngModel)]="name" class=" from-control w-75" type="text">
+
+
+<h2 [ngClass]="{'test':ifcondatan}">{{userName}}</h2>
+<h3 [ngStyle]="{color:'red'}">Amr Khaled</h3>
+
+ <h4 *ngIf="ifcondatan">show ngIf</h4>
+ <h4 *ngIf="ifcondatan;else hambozo">show ngIf</h4>
+<ng-template #hambozo>
+show ng-template hambozo
+</ng-template>
+<table class="table table-striped">
+  <thead>
+    <th>Name</th>
+    <th>age</th>
+    <th>salary</th>
+
+  </thead>
+  <tbody>
+    <tr *ngFor="let testtService of testService">
+      <td>{{testtService.name}}</td>
+      <td>{{testtService.age}}</td>
+      <td>{{testtService.salary}}</td>
+    </tr>
+  </tbody>
+
+</table>

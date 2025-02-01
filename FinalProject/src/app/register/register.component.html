@@ -1,0 +1,21 @@
+<div class=" w-75 mx-auto py-3">
+
+  <form  [formGroup]="registerForm" (ngSubmit)="(registerForm)">
+    <label for="Frist_name">Frist Name:</label>
+    <input formControlName="frist_name" type="text" class="form-control mb-2" name="" id="">
+    
+    <label for="Last_name">Last Name:</label>
+    <input formControlName="last_name" type="text" class="form-control mb-2" name="" id="">
+
+    <label for="Age">Age:</label>
+    <input formControlName="age" type="number" class="form-control mb-2" name="" id="">
+
+    <label for="Age">Email:</label>
+    <input formControlName="email" type="email" class="form-control mb-2" name="" id="">
+
+    <label for="Age">Password:</label>
+    <input formControlName="password" type="password" class="form-control mb-2" name="" id="">
+
+    <button type="submit" class=" btn  bg-info mt-4 ">Register</button>
+  </form>
+</div>
